@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Thor fitness </title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Bhai&display=swap" rel="stylesheet">
+    <style>
+        /* css reset  */
+        body {
+            color: white;
+            margin: 0px;
+            padding: 0px;
+            background: url('img/Thor.jpg');
+            font-family: 'Baloo Bhai', cursive;
+        }
+
+        .left {
+            display: inline-block;
+            /* border: 2px solid red; */
+            position: absolute;
+            left: 40px;
+            top: 22px;
+        }
+
+        .left div {
+            text-align: center;
+            line-height: 2px;
+        }
+
+        .left img {
+            width: 105px;
+            height: 80px;
+            filter: invert(100%);
+            font-size: 20px;
+            line-height: 0px;
+        }
+
+        .Mid {
+            display: block;
+            width: 37%;
+            margin: 43px auto;
+            border: 2px solid green;
+            
+        }
+
+        .Right {
+            position: absolute;
+            right: 34px;
+            top: 56px;
+            display: inline-block;
+            /* border: 2px solid yellow; */
+        }
+
+        .navbar {
+            /* display: inline-block; */
+        }
+
+        .navbar li {
+            display: inline-block;
+            font-size: 17px;
+        }
+
+        .navbar li a {
+            color: white;
+            text-decoration: none;
+            padding: 34px 20px;
+        }
+
+        .navbar li a:hover,
+        .navbar li a.active {
+            text-decoration: underline;
+            color: gray;
+        }
+
+        .btn {
+            padding: 1px 0px;
+            margin: 0px 9px;
+            cursor: pointer;
+            background-color: black;
+            color: white;
+            border: 2px solid grey;
+            border-radius: 9px;
+            font-size: 15px;
+            font-family: 'Baloo Bhai', cursive;
+        }
+
+        .btn:hover {
+            background-color: rgb(39, 37, 37);
+        }
+
+        .container {
+            border: 2px solid white;
+            margin: 171px 136px;
+            padding: 66px 40px;
+            width: 33%;
+            border-radius: 15px;
+        }
+
+        .form-group input {
+            text-align: center;
+            border-radius: 10px;
+            font-size: 18px;
+            display: block;
+            width: 295px;
+            padding: 3px;
+            margin: 12px auto;
+            font-family: 'Baloo Bhai', cursive;
+        }
+
+        .container h2 {
+            text-align: center;
+        }
+
+        .container button {
+            display: block;
+            margin: 15px auto;
+            width: 60%;
+            height: 40px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <!-- left box for logo -->
+        <div class="left">
+            <img src="img/gym.jpg" alt="">
+            <div>Thor Fitness</div>
+        </div>
+
+        <!-- mid box for navbar -->
+        <div class="Mid">
+            <ul class="navbar">
+                <li><a href="#" class="active">home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#"> Fitness calculator </a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+
+        <!-- right box for button -->
+        <div class="Right">
+            <button class="btn">Call Us Now</button>
+            <button class="btn">Email Us</button>
+        </div>
+    </header>
+
+    <div class="container">
+        <h2>Join The Best Gym Of Dholpur Now</h2>
+        <form action="noaction.php">
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Name ">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Age ">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Gender">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Phone no">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Email">
+            </div>
+            <button class="btn">Submit</button>
+        </form>
+    </div>
+</body>
+
+</html>
